@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/omni-push-dispatcher",
+    "description": "Unified push notification router delivering transactional alerts across Firebase Cloud Messaging (FCM) and Apple Push (APNs).",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\OmniPush\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\OmniPush\\PackageServiceProvider"
+            ]
+        }
+    }
+}
